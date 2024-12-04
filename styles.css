@@ -67,3 +67,61 @@ header {
 .loginbutton:hover {
     background: #ffffff;
 }
+
+.hero {
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 85px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 5px 5px black
+}
+
+.hero p {
+    font-size:22px;
+    margin-bottom: 30px;
+    color: #e4d5d5;
+    text-shadow: 1px 1px 5px #000000cc;
+}
+
+.herobuttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #ff4736;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
