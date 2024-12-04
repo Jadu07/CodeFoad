@@ -27,3 +27,43 @@ header {
     position: fixed;
     background: rgba(0, 0, 0, 0.598);
 }
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.navigationlinks {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.navigationlinks a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navigationlinks a:hover {
+    color: #ff6f61;
+}
+
+.loginbutton{
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.loginbutton:hover {
+    background: #ffffff;
+}
