@@ -125,6 +125,74 @@ header {
     background-color: #ffffff;
     color: #121212;
 }
+
+.features {
+    padding: 60px 20px;
+    background-color: #100f0f; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #ff6f61; 
+    text-shadow: 2px 2px 5px #000000cc;
+}
+
+.featurescontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .featurescontainer {
+      grid-template-columns: 1fr 1fr; 
+    }
+  }
+  
+@media (max-width: 480px) {
+    .featurescontainer {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+
+.feature {
+    background: #ffffff1a; 
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px #00000033;
+}
+
+.feature:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 25px #0000004d;
+}
+
+.featureicon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 23px;
+}
+
 .tutorials {
     padding: 40px 30px;
     background-color: #121212; 
