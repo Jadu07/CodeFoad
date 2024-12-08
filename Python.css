@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 130%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f; 
+    color: #d4d4d4; 
+}
+
+header {
+    height: 100vh;
+    background: url('./hero.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background: rgba(30, 30, 47, 0.9); 
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.navigationlinks {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.navigationlinks a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navigationlinks a:hover {
+    color: #61afef; /* Soft blue hover color */
+}
+
+.loginbutton {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.loginbutton:hover {
+    background: #61afef;
+    color: #1e1e2f;
+}
+
+.pythonhero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background: url('./pythonessentialshero.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.pythonhero h1 {
+    color: #ff6f61; 
+    font-size: 70px;
+}
+
+.pythonhero p {
+    line-height: 3rem;
+    font-size: 22px;
+}
+
+/* Themed Sections */
+.themebackground {
+    display: flex;
+    align-items: left;
+    background: #242424; 
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.theme ul {
+    padding-left: 25px;
+}
+
+.topicbackground1 {
+    display: flex;
+    align-items: left;
+    background: #282c34; 
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 5px 0px 20px rgba(76, 175, 80, 0.5) inset; /* Green glow */
+    width: 100%;
+}
+
+.topicbackground2 {
+    display: flex;
+    align-items: right;
+    background: #282c34;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 5px 0px 20px rgba(66, 165, 245, 0.5) inset; /* Blue glow */
+    width: 100%;
+}
+
+
+.topiccontent {
+    padding: 20px;
+}
+
+
+.codebackground {
+    background-color: #2d2d44; 
+    color: #f8f8f2; 
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
+    border: 1px solid #3e3e5e; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.codebackground p {
+    color: #98c379; /* Green for code comments */
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.tryitbutton {
+    display: inline-block;
+    background-color: #61afef; 
+    color: #1e1e2f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tryitbutton:hover {
+    background-color: #4e8ecf; 
+    color: #ffffff;
+}
+
+.topiccontent h3 {
+    color: #ff6f61; 
+    padding-bottom: 10px;
+}
+
+.topiccontent span {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar .navigationlinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pythonhero h1 {
+        font-size: 2rem;
+    }
+
+    .pythonhero p {
+        font-size: 1rem;
+    }
+
+    .tryitbutton {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
+
+.NextPage {
+    color: #fff;
+    border-radius: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
+}
+
+.NextPage a {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+    background-color: #61afef; 
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+}
