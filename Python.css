@@ -70,6 +70,42 @@ header {
     color: #1e1e2f;
 }
 
+.tutdropdown {
+    position: relative; 
+}
+
+.tutorialdropdownitems {
+    display: none; 
+    position: fixed;
+    background-color: #000000cc; 
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    min-width: 180px;
+    box-shadow: 0 4px 8px #00000033; 
+    padding-top: 10px;
+}
+
+.tutorialdropdownitems li {
+    list-style: none;
+}
+
+.tutorialdropdownitems li a {
+    color: #e0e0e0; 
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tutorialdropdownitems li a:hover {
+    background-color: rgba(255, 111, 97, 0.2);
+    color: #ff6f61; 
+}
+
+.tutdropdown:hover .tutorialdropdownitems {
+    display: block;
+}
+
 .pythonhero {
     display: flex;
     justify-content: center;
@@ -248,20 +284,18 @@ ul {
     }
 }
 
-.NextPage {
+.firstPage {
     color: #fff;
     border-radius: 50%;
     font-family: 'Courier New', Courier, monospace;
     margin: 15px 0;
 }
 
-.NextPage a {
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    font-weight: 700;
-    color: white;
-    background-color: #61afef; /* Consistent blue for navigation */
+.secondPage {
+    color: #fff;
+    border-radius: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
 }
 
 .exercises>pre {
@@ -277,11 +311,18 @@ ul {
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
     /* width: 90%; */
 }
 
 footer a{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+    background-color: #61afef;
     text-decoration: none;
     padding: 5px;
     border-radius: 10px;
@@ -291,4 +332,13 @@ footer a{
 footer a:hover{
     transform: translateY(-8px); 
     box-shadow: 0 10px 25px #0000004d;
+}
+
+footer .previousbutton{
+    background-color: #fdb462;
+}
+
+.firstPage {
+    display: flex;
+    justify-content: center;
 }
