@@ -212,8 +212,13 @@ header {
     color: #ffffff;
 }
 
-.topiccontent h3 {
+.topicbackground1 .topiccontent h3 {
     color: #ff6f61; /* Accent color for headings */
+    padding-bottom: 10px;
+}
+
+.topicbackground2 .topiccontent h3 {
+    color: rgb(134, 182, 37); /* Accent color for headings */
     padding-bottom: 10px;
 }
 
