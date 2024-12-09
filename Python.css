@@ -262,3 +262,10 @@ header {
 pre {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* python2.html extra css */
+
+.python2heading{
+    padding: 100px 0 25px 0;
+}
