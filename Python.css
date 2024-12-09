@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1e1e2f; 
-    color: #d4d4d4; 
+    background-color: #1e1e2f; /* Dark but slightly colorful background */
+    color: #d4d4d4; /* Soft light gray text for better readability */
 }
 
 header {
@@ -26,7 +26,7 @@ header {
     height: 70px;
     width: 100%;
     position: fixed;
-    background: rgba(30, 30, 47, 0.9); 
+    background: rgba(30, 30, 47, 0.9); /* Slightly transparent navbar for layering */
 }
 
 .logo a {
@@ -82,7 +82,7 @@ header {
 }
 
 .pythonhero h1 {
-    color: #ff6f61; 
+    color: #ff6f61; /* Accent color */
     font-size: 70px;
 }
 
@@ -95,7 +95,7 @@ header {
 .themebackground {
     display: flex;
     align-items: left;
-    background: #242424; 
+    background: #242424; /* Neutral dark gray background */
     border: 1px solid #333;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -110,7 +110,7 @@ header {
 .topicbackground1 {
     display: flex;
     align-items: left;
-    background: #282c34; 
+    background: #282c34; /* Neutral dark theme */
     border: 1px solid #333;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -129,20 +129,64 @@ header {
     width: 100%;
 }
 
+.revision{
+    /* background-color: #1e1e1e; */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 2.5%;
+    width: 100vw;
+}
+
+.revision h3{
+    color: #ff6f61;
+}
+
+.revisionbackground {
+    display: flex;
+    align-items: left;
+    background: #21252b; /* Slightly darker neutral for focus */
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 5px 0px 20px rgba(138, 43, 226, 0.5) inset; /* Subtle indigo glow */
+    width: 100%;
+}
+
+.exercises{
+    /* background-color: #1e1e1e; */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 2.5%;
+    width: 100vw;
+}
+
+.exercises h3{
+    color: #efb661;
+}
+
+.exercisesbackground {
+    display: flex;
+    align-items: right;
+    background: #282c34; /* Consistent with topics */
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 5px 0px 20px rgba(255, 165, 0, 0.5) inset; /* Orange glow for fun vibe */
+}
 
 .topiccontent {
     padding: 20px;
 }
 
-
+/* Code Blocks */
 .codebackground {
-    background-color: #2d2d44; 
-    color: #f8f8f2; 
+    background-color: #2d2d44; /* Darker tone with a slight blue hue */
+    color: #f8f8f2; /* Soft white text */
     padding: 15px;
     border-radius: 8px;
     font-family: 'Courier New', Courier, monospace;
     margin: 15px 0;
-    border: 1px solid #3e3e5e; 
+    border: 1px solid #3e3e5e; /* Subtle border */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -154,7 +198,7 @@ header {
 /* Buttons */
 .tryitbutton {
     display: inline-block;
-    background-color: #61afef; 
+    background-color: #61afef; /* Blue for action buttons */
     color: #1e1e2f;
     padding: 10px 15px;
     border-radius: 5px;
@@ -164,12 +208,12 @@ header {
 }
 
 .tryitbutton:hover {
-    background-color: #4e8ecf; 
+    background-color: #4e8ecf; /* Slightly darker blue */
     color: #ffffff;
 }
 
 .topiccontent h3 {
-    color: #ff6f61; 
+    color: #ff6f61; /* Accent color for headings */
     padding-bottom: 10px;
 }
 
@@ -212,7 +256,7 @@ header {
     font-size: larger;
     font-weight: 700;
     color: white;
-    background-color: #61afef; 
+    background-color: #61afef; /* Consistent blue for navigation */
 }
 
 pre {
