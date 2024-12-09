@@ -264,7 +264,7 @@ ul {
     background-color: #61afef; /* Consistent blue for navigation */
 }
 
-pre {
+.exercises>pre {
     font-family: Arial, Helvetica, sans-serif;
 }
 
