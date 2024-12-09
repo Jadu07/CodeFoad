@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html">
+                CODE<span style="color: #ff6f61;">FOAD</span>
+            </a>
+        </div>
+        <ul class="navigationlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li class="tutdropdown">
+                <a>Tutorials</a>
+                <ul class="tutorialdropdownitems">
+                    <li><a href="./python1.html">Python Essentials</a></li>
+                    <li><a href="./bashscripting.html">Bash Scripting</a></li>
+                    <li><a href="./html.html">HTML</a></li>
+                    <li><a href="./css.html">CSS</a></li>
+                </ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact</a></li>
+            <li><a href="./login.html" class="loginbutton">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="loginform">
+            <h2>Login</h2>
+            <p class="subheading">Welcome back! Please enter your credentials to continue.</p>
+            <form>
+                <div class="inputs">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="inputs">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="loginbutton">Login</button>
+                <div class="forgotpassword">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="signup">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
