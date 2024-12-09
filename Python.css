@@ -274,3 +274,21 @@ ul {
 .python2heading{
     padding: 100px 0 25px 0;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    /* width: 90%; */
+}
+
+footer a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer a:hover{
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 25px #0000004d;
+}
