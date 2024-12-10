@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.598);
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.navigationlinks {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.navigationlinks a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navigationlinks a:hover {
+    color: #ff6f61;
+}
+
+.loginbutton{
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.loginbutton:hover {
+    background: #ffffff;
+}
+
+.tutdropdown {
+    position: relative; 
+}
+
+.tutorialdropdownitems {
+    display: none; 
+    position: fixed;
+    background-color: #000000cc; 
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    min-width: 180px;
+    box-shadow: 0 4px 8px #00000033; 
+    padding-top: 10px;
+}
+
+.tutorialdropdownitems li {
+    list-style: none;
+}
+
+.tutorialdropdownitems li a {
+    color: #e0e0e0; 
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tutorialdropdownitems li a:hover {
+    background-color: rgba(255, 111, 97, 0.2);
+    color: #ff6f61; 
+}
+
+.tutdropdown:hover .tutorialdropdownitems {
+    display: block;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+.contactuscontainer {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 200px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.contactusinformation {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, #2c2c2c, #1b1b1b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactusinformation h1 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.contactusinformation p {
+    font-size: 1rem;
+    color: #bdbdbd;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.Information {
+    margin-bottom: 20px;
+}
+
+.Information h4 {
+    font-size: 1rem;
+    color: #ff6f61;
+    margin-bottom: 5px;
+}
+
+.Information p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.contactusform {
+    padding: 40px;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactusform h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.6);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e4554f;
+    transform: scale(1.02);
+}

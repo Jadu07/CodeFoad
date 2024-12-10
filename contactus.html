@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html">
+                CODE<span style="color: #ff6f61;">FOAD</span>
+            </a>
+        </div>
+        <ul class="navigationlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li class="tutdropdown">
+                <a>Tutorials</a>
+                <ul class="tutorialdropdownitems">
+                    <li><a href="./python1.html">Python Essentials</a></li>
+                    <li><a href="./bashscripting.html">Bash Scripting</a></li>
+                    <li><a href="./html.html">HTML</a></li>
+                    <li><a href="./css.html">CSS</a></li>
+                </ul>
+            <li><a href="./index.html#aboutus">About Us</a></li>
+            <li><a href="./contactus.html">Contact</a></li>
+            <li><a href="./login.html" class="loginbutton">Login</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="contactus">
+        <div class="contactuscontainer">
+            <div class="contactusinformation">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Reach out to us using the details below or fill out the form to send us a message.</p>
+                <div class="Information">
+                    <h4>Address</h4>
+                    <p>Your space hostel, Revell Orchid Porwal Road Lohegaon, Pune 412001 </p>
+                </div>
+                <div class="Information">
+                    <h4>Email</h4>
+                    <p>codingtutor@gmail.com</p>
+                </div>
+                <div class="Information">
+                    <h4>Phone</h4>
+                    <p>+91-1234567890</p>
+                </div>
+            </div>
+
+            <div class="contactusform">
+                <h2>Send Us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
