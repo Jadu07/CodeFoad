@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html">
+                CODE<span style="color: #ff6f61;">FOAD</span>
+            </a>
+        </div>
+        <ul class="navigationlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li class="tutdropdown">
+                <a>Tutorials</a>
+                <ul class="tutorialdropdownitems">
+                    <li><a href="./Python1.html">Python Essentials</a></li>
+                    <li><a href="./bashscripting.html">Bash Scripting</a></li>
+                    <li><a href="./html.html">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                </ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="./login.html" class="loginbutton">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="pythonhero">
+        <h1>🎨 Embarking on the CSS Adventure: Painting the Web 🎨</h1>
+        <p>Welcome to the magical world of <b>CSS (Cascading Style Sheets)!</b> If HTML is the structure of your web castle, CSS is the vibrant paint, intricate designs, and glowing chandeliers that bring it to life. With CSS, you can transform bland web pages into stunning, interactive masterpieces that captivate the eye and enchant the soul. 🌟</p>    
+    </div>
+
+    <section class="topics">
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>🌟 Getting Started: The Magic of CSS</h3>
+                <p>CSS is like a <b><em>spellbook</em></b> for web design, filled with powerful incantations to:</p>
+                <ul>
+                    <li><b><em>Style</em></b> text, colors, and layouts.</li>
+                    <li><b><em>Transform</em></b> simple boxes into captivating elements.</li>
+                    <li><b><em>Animate</em></b> your pages with life-like motions.</li>
+                </ul>
+                <p>Here's how to weave your first CSS spell:</p>
+                <div class="codebackground">
+<pre>
+&lt;style&gt;
+  h1{
+    color: #61afef;   <span style="opacity: 0.5; font-size: 100%;">/* A magical blue */</span>
+    font-family: 'Arial, sans-serif';   <span style="opacity: 0.5; font-size: 100%;">/* Elegant typography */</span>
+    text-align: center;   <span style="opacity: 0.5; font-size: 100%;">/* Centered like royalty */</span>
+  }
+&lt;style&gt;
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="topicbackground2">
+            <div class="topiccontent">
+                <h3>🌈 Selectors: Choosing Your Targets</h3>
+                <p>CSS selectors are like <b><em>magnifying glasses</em></b>-—they help you focus on specific elements you want to enchant.</p><br>
+                <p><b>🧙 Examples of Selectors:</b></p>
+                <ul>
+                    <li><b>Element Selector</b>: Targets all <em>&lt;p&gt</em> tags.</li>
+                    <div class="codebackground">
+<pre>
+p {
+  color: green; 
+}
+</pre>
+                    </div>
+                    <li><b>Class Selector</b>: Applies styles to elements with a specific class.</li>
+                    <div class="codebackground">
+<pre>
+.highlight {
+  background-color: yellow;
+}
+</pre>
+                    </div>
+                    <li><b>ID Selector</b>: Styles a unique element with an ID.</li>
+                    <div class="codebackground">
+<pre>
+#banner {
+  font-size: 24px;
+}
+</pre>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>🎨 Colors and Backgrounds: Painting the Canvas</h3>
+                <p>Bring your webpage to life with vibrant colors and eye-catching backgrounds. CSS offers you every shade imaginable to make your site a visual treat.</p><br>
+                <p><b>🧙 Examples:</b></p>
+                <ul>
+                    <li><b>ext Color:</b></li>
+                    <div class="codebackground">
+<pre>
+h1 {
+  color: #e63946;  <span style="opacity: 0.5; font-size: 100%;">/* Crimson red */</span>
+}
+</pre>
+                    </div>
+                    <li><b>Background Color:</b></li>
+                    <div class="codebackground">
+<pre>
+body { 
+  background-color: #f1faee;  <span style="opacity: 0.5; font-size: 100%;">/* Soft white */</span>
+}
+</pre>
+                    </div>
+                    <li><b>Background Image:</b></li>
+                    <div class="codebackground">
+<pre>
+body {
+  background-image: url('forest.jpg');
+  background-size: cover;
+}
+</pre>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topicbackground2">
+            <div class="topiccontent">
+                <h3>🧩 Box Model: The Building Blocks of Design</h3>
+                <p>Every element in CSS is wrapped in an invisible <b><em>box</em></b> that includes:</p>
+                <ul>
+                    <li><b><em>Content</em></b>: The core content (like text or images).</li>
+                    <li><b><em>Padding</em></b>: The space between content and the border.</li>
+                    <li><b><em>Border</em></b>: The edge of the element.</li>
+                    <li><b><em>Margin</em></b>: The space outside the border.</li>
+                </ul><br>
+                <p><b>Example:</b></p>
+                <div class="codebackground">
+<pre>
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black; 
+  margin: 10px;
+}
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>📐 Positioning: Placing Your Elements with Precision</h3>
+                <p>CSS allows you to position your elements exactly where you want them. Whether you want to <b><em>center a button or fix a header</em></b> at the top, you're in control.</p>
+                <p><b>Position Values:</b></p>
+                <ul>
+                    <li><b><em>Static</em></b>: Default position.</li>
+                    <li><b><em>Relative</em></b>: Moves relative to its normal position.</li>
+                    <li><b><em>Absolute</em></b>: Positioned relative to its nearest positioned ancestor.</li>
+                    <li><b><em>Fixed</em></b>: Stays in place even when scrolling.</li>
+                </ul><br>
+                <p><b>Example:</b></p>
+                <div class="codebackground">
+<pre>
+div {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="topicbackground2">
+            <div class="topiccontent">
+                <h3>✨ Typography: The Art of Beautiful Text</h3>
+                <p>Fonts and text styles are the <b><em>jewels of the web</em></b>, and CSS lets you craft them with ease.</p><br>
+                <p><b>Example:</b></p>
+                <div class="codebackground">
+<pre>
+h1 {
+  font-family: 'Georgia, serif';
+  font-size: 36px;
+  text-shadow: 2px 2px #888888;  <span style="opacity: 0.5; font-size: 100%;">/* Adds a subtle shadow */</span>
+}
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>🎬 Animations and Transitions: Breathing Life into Pages</h3>
+                <p>Bring motion to your web pages with CSS animations and transitions. Animate buttons, make text fade in, or add mesmerizing hover effects!</p><br>
+                <p><b>Example:</b></p>
+                <div class="codebackground">
+<pre>
+button {
+  background-color: #61afef;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #5398d9;
+}
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="exercisesbackground">
+            <div class="exercises">
+                <h3><b><em>🌟 CSS Fun Exercises</em></b></h3><br>
+                <p><b>1️⃣ Color the World:</b></p>
+                <p>Create a simple webpage with colorful headers and paragraphs. Try different text colors and background colors to set a mood.</p>
+                <hr style="margin-bottom: 30px;" noshade>
+                
+                <p><b>2️⃣ Design a Treasure Chest:</b></p>
+                <p>Use the box model to create a "treasure chest" with padding, borders, and a styled background.</p>
+                <hr style="margin-bottom: 30px;" noshade>
+
+                <p><b>3️⃣ Floating Clouds Animation:</b></p>
+                <p>Animate a few divs to look like clouds gently floating across the screen. Use <em>@keyframes</em> for animation magic!</p>
+                <hr style="margin-bottom: 30px;" noshade>                 
+            </div>
+        </div>
+        <div class="applause">
+            <h3>👏 Bravo, Adventurer!</h3>
+            <p>You've taken the first step into the realm of CSS magic, learning to style, position, and animate your creations. But the journey doesn't end here! Let's delve deeper into the enchanted forest of CSS to unlock flexbox, grid, and other advanced secrets. Click below to advance your adventure!</p>
+        </div>
+    </section>
+    <section class="firstPage">
+        <a href="https://www.w3schools.com/css/" class="nextbutton"> 🐾 Let's unlock advanced secrets! of CSS magic ✨💫</a>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">©️ 2024 Made with ❤️ by <span class="highlight">Rohan Kumar</span>, <span class="highlight">Yashraj Chowhan</span>, and <span class="highlight">Suraj Kulkarni</span>.</p>
+            <p class="footer-text">Empowering the world, one line of code at a time. 🚀</p>
+        </div>
+    </footer>
