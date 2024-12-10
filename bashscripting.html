@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bash Scripting</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                CODE<span style="color: #ff6f61;">FOAD</span>
+            </a>
+        </div>
+        <ul class="navigationlinks">
+            <li><a href="./index.html">Home</a></li>
+            <li class="tutdropdown">
+                <a>Tutorials</a>
+                <ul class="tutorialdropdownitems">
+                    <li><a href="./Python1.html">Python Essentials</a></li>
+                    <li><a href="">Bash Scripting</a></li>
+                    <li><a href="./html.html">HTML</a></li>
+                    <li><a href="./css.html">CSS</a></li>
+                </ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="./login.html" class="loginbutton">Login</a></li>
+        </ul>
+    </nav>
+    <div class="pythonhero">
+        <h1>🐚 Welcome! Let's Exploring Bash's Shell Kingdom 🐚</h1>
+        <p>Welcome to the Shell Kingdom, where the power of the Bash terminal awaits you! Prepare to unlock the secrets of commands, file manipulation, and permissions in a world of endless possibilities. 🌌✨</p>    
+    </div>
+    <section class="topics">
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h2>Getting Started: Bash Shell Basics 🌱</h2>
+                <p>Before you set off on your journey through the kingdom, let's first get familiar with<b><em>Bash</em></b>, the language that governs the land. The <b><em>Bash shell</em></b> is where all commands are issued, and it's your magical interface to the <b><em>Shell Kingdom.</em></b></p>
+                <p>To enter the kingdom (open the terminal), you'll simply open your Bash shell. You'll be greeted with a prompt—usually something like:</p>
+                <div class="codebackground">
+                    <pre>user@computer:~$</pre>
+                </div>
+                <p>Here, you can type your commands and see immediate results. 🌳</p>
+            </div>
+        </div>
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>Commands: The Royal Words of Bash 🗣️</h3>
+                <p>Commands in Bash are like magical incantations that make the kingdom come alive. 🏰</p>
+                <h4>Basic Commands:</h4>
+                <div class="codebackground">
+                    <p>pwd <span style="opacity: 0.5; font-size: 100%;"> # Prints the current directory (Where you are!)</span></p>
+                    <p>ls <span style="opacity: 0.5; font-size: 100%;"> # Lists files in your current directory</span></p>
+                    <p>cd [path] <span style="opacity: 0.5; font-size: 100%;"> # Changes to a new directory</span></p>
+                    <p>mkdir [name]<span style="opacity: 0.5; font-size: 100%;"> # Creates a new directory</span></p>
+                    <p>rm [name] <span style="opacity: 0.5; font-size: 100%;"> # Removes a file or directory</span></p>
+                </div>
+                <h4>Example:</h4>
+                <div class="codebackground">
+                    <p>mkdir forest_trail <span style="opacity: 0.5; font-size: 100%;"> # Creates a directory named forest_trail</span></p>
+                    <p>cd forest_trail <span style="opacity: 0.5; font-size: 100%;"> # Moves into the forest_trail</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="topicbackground2">
+            <div class="topiccontent">
+                <h3>Creating Your Castle (Folder) 🏰</h3>
+                <p>To build a new castle (folder) in your domain, you'll use the <em>mkdir</em> command:</p>
+                <div class="codebackground">
+                    <p>mkdir folder_name</p>
+                </div>
+                <p>Example:</p>
+                <div class="codebackground">
+                    <p>mkdir treasure_chamber <span style="opacity: 0.5; font-size: 100%;"> # Creates a directory named treasure_chamber</span></p>
+                </div>
+                <p>Now, your treasure is safely locked away in the treasure_chamber!</p>
+            </div>
+        </div>
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>Folder Manipulation: Building Your Kingdom 🗺️</h3>
+                <p>Folders (directories) are like castles in the Shell Kingdom, housing all your treasures and secrets. Knowing how to build, move, and organize them is key to ruling your domain. 🏰</p>
+                <ul>
+                    <li><b>Exploring the Kingdom (Navigating Folders) 🗺️</b></li>
+                    <div class="codebackground">
+                        <p>cd folder_name <span style="opacity: 0.5; font-size: 100%;"> # Move into a folder</span></p>
+                        <p>cd .. <span style="opacity: 0.5; font-size: 100%;"> # Move back to the parent folder</span></p>
+                        <p>cd /path/to/folder <span style="opacity: 0.5; font-size: 100%;"> # Move to an absolute path</span></p>
+                    </div>
+                    <li><b>Renaming Your Castle (Folder) ✨</b></li>
+                    <div class="codebackground">
+                        <p>mv old_folder_name new_folder_name</p>
+                    </div>
+                    <li><b>Copying Your Kingdom (Folder) 🔄</b></li>
+                    <div class="codebackground">
+                        <p>cp -r folder_name new_folder_name</p>
+                    </div>
+                    <p>Example:</p>
+                    <div class="codebackground">
+                        <p>cp -r treasure_chamber backup_chamber</p>
+                    </div>
+                    <li><b>Clearing Out Old Folders (Deleting Folders) 🧹</b></li>
+                    <div class="codebackground">
+                        <p>rm -r folder_name</p>
+                    </div>
+                    <p>Add the <b>" <em>-f </em>"</b> option for forced deletion:</p>
+                    <div class="codebackground">
+                        <p>rm -rf folder_name</p>
+                    </div>
+                </ul>                
+            </div>
+        </div>
+        <div class="topicbackground2">
+            <div class="topiccontent">
+                <h3>File Manipulation: Navigating the Library 📖</h3>
+                <p>Bash opens the gates to effortless file interaction, empowering you to create, explore, and command your digital world with a few keystrokes. Whether uncovering hidden treasures or organizing chaos, Bash makes the impossible feel magical! ✨</p>
+                <ul>
+                    <li><b>Reading a File:</b></li>
+                    <div class="codebackground">
+                        <p>cat file_name.txt</p>
+                    </div>
+                    <li><b>Writing to a File(Append):</b></li>
+                    <div class="codebackground">
+                        <p>echo "New Entry" >> file_name.txt</p>
+                    </div>
+                    <li><b>Overwriting the file:</b></li>
+                    <div class="codebackground">
+                        <p>echo "New Entry" > file_name.txt</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="topicbackground1">
+            <div class="topiccontent">
+                <h3>Controlling Access: chmod and Permissions 🔒</h3>
+                <p>In the Shell Kingdom, not everyone should have access to your treasures. The <b><em> chmod</em></b> command is your magical shield, controlling who can read, write, or execute files.</p>
+                <h4>Changing Permissions</h4>
+                <p>Use <b><em>chmod </em></b>to control access. You can give specific powers (permissions) to different users.</p>
+                <div class="codebackground">
+                    <p>chmod 755 folder_name</p>
+                </div>
+                <p>Example:</p>
+                <div class="codebackground">
+                    <p>chmod 755 treasure_chamber</p>
+                </div>
+                <p>The numbers represent different levels of access:</p>
+                <ul>
+                    <li><b>7</b>: Full access (read, write, execute)</li>
+                    
+                    <li><b>5</b>: Read and execute permissions</li>
+                    <li><b>4</b>: Read-only permissions</li>
+                </ul><br>
+                <p>You can also use symbolic notation:</p>
+                <div class="codebackground">
+                    <p>chmod u+x file_name</p>
+                </div>
+                <p><b>Symbols</b></p>
+                <ul>
+                    <li>User: <b>u</b></li>
+                    <li>Group: <b>g</b></li>
+                    <li>Others: <b>o</b></li>
+                    <li>read: <b>r</b></li>
+                    <li>write: <b>w</b></li>
+                    <li>execute: <b>x</b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="revisionbackground">
+            <div class="revision">
+                <h3>🌟 Fun Exercise: Kingdom Builder Challenge 🌟</h3><br>
+                <p>Let's put your newfound knowledge to the test! 🏰🌲</p><br>
+                <ol>
+                    <li>Create a folder called <em>adventure_hub</em>.</li>
+                    <li>Inside <em>adventure_hub</em>, create two subfolders: <em>maps </em>and <em>treasures</em>.</li>
+                    <li>Copy the <em>maps </em>folder into a new folder called <em>maps_backup</em>.</li>
+                    <li>Rename the <em>treasures</em>folder to <em>hidden_treasures</em>.</li>
+                    <li>Finally, delete the <em>maps_backup </em>folder to tidy up your kingdom!</em>.</li>                   
+                </ol>
+            </div>
+        </div>
+        <div class="applause">
+            <h3>🎉 🌟 Applause for Completing the Tutorial! 🌟 🎉</h3>
+            <p>🏆 Congratulations, adventurer! 🏆 You've successfully navigated the realms of Bash, learned to manage folders, and even wielded the mighty chmod command to protect your treasures. With these skills, you can now rule your Shell Kingdom with wisdom and power.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">© 2024 Made with ❤️ by <span class="highlight">Rohan Kumar</span>, <span class="highlight">Yashraj Chowhan</span>, and <span class="highlight">Suraj Kulkarni</span>.</p>
+            <p class="footer-text">Empowering the world, one line of code at a time. 🚀</p>
+        </div>
+    </footer>

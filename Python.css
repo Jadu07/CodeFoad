@@ -143,6 +143,10 @@ ul {
     padding-left: 25px;
 }
 
+ol {
+    padding-left: 25px;
+}
+
 .topicbackground1 {
     display: flex;
     align-items: left;
@@ -214,27 +218,27 @@ ul {
     padding: 20px;
 }
 
-/* Code Blocks */
+
 .codebackground {
-    background-color: #2d2d44; /* Darker tone with a slight blue hue */
-    color: #f8f8f2; /* Soft white text */
+    background-color: #2d2d44; 
+    color: #f8f8f2; 
     padding: 15px;
     border-radius: 8px;
     font-family: 'Courier New', Courier, monospace;
     margin: 15px 0;
-    border: 1px solid #3e3e5e; /* Subtle border */
+    border: 1px solid #3e3e5e; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .codebackground p {
-    color: #98c379; /* Green for code comments */
+    color: #98c379; 
     font-size: 0.9rem;
 }
 
-/* Buttons */
+
 .tryitbutton {
     display: inline-block;
-    background-color: #61afef; /* Blue for action buttons */
+    background-color: #61afef; 
     color: #1e1e2f;
     padding: 10px 15px;
     border-radius: 5px;
@@ -244,17 +248,17 @@ ul {
 }
 
 .tryitbutton:hover {
-    background-color: #4e8ecf; /* Slightly darker blue */
+    background-color: #4e8ecf; 
     color: #ffffff;
 }
 
 .topicbackground1 .topiccontent h3 {
-    color: #ff6f61; /* Accent color for headings */
+    color: #ff6f61; 
     padding-bottom: 10px;
 }
 
 .topicbackground2 .topiccontent h3 {
-    color: rgb(134, 182, 37); /* Accent color for headings */
+    color: rgb(134, 182, 37); 
     padding-bottom: 10px;
 }
 
@@ -309,14 +313,14 @@ ul {
     padding: 100px 0 25px 0;
 }
 
-footer{
+section:nth-of-type(2){
     display: flex;
     justify-content: space-between;
     
     /* width: 90%; */
 }
 
-footer a{
+section:nth-of-type(2) a{
     display: flex;
     justify-content: center;
     font-size: larger;
@@ -329,16 +333,39 @@ footer a{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-footer a:hover{
+section:nth-of-type(2) a:hover{
     transform: translateY(-8px); 
     box-shadow: 0 10px 25px #0000004d;
 }
 
-footer .previousbutton{
+section:nth-of-type(2) .previousbutton{
     background-color: #fdb462;
 }
 
-.firstPage {
+.firstPage{
     display: flex;
-    justify-content: center;
+    justify-self: center;
+}
+
+/* footer code */
+footer {
+    background-color: #1c1e21; /* Dark background */
+    color: #ffffff;           /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    margin: 5px 0;
+}
+
+.highlight {
+    color: #61afef;           
+    font-weight: bold;
 }
