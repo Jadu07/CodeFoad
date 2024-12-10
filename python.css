@@ -229,13 +229,22 @@ header {
 .themebackground {
     display: flex;
     align-items: left;
-    background: #242424; /* Neutral dark gray background */
+    background: #242424; /* Neutral dark gray background #242424*/
     border: 1px solid #333;
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
+
+.theme h2{
+    color: #61F1FF;
+}
+
+.theme h3{
+    color: #8338ec;
+}
+
 
 ul {
     padding-left: 25px;
