@@ -314,3 +314,80 @@ header {
         max-width: 100%;
     }
 }
+
+.contactuscontainer {
+    max-width: 700px;
+    padding: 25px 15px;
+}
+
+.contactus {
+    width: 100%;
+    
+    padding: 20px;
+    background: url("https://img.freepik.com/free-photo/man-using-laptop-night-top-view-web-banner-with-copy-space_169016-53607.jpg?t=st=1733809664~exp=1733813264~hmac=ea0375ec1e111752e2ca9627f12ce4f0427035000c3a0a3e6039b71b896ab3e9&w=2000");
+}
+
+.contactustitle {
+    font-size: 29px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.contactusform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.samerow {
+    display: flex;
+    gap: 15px;
+}
+
+.samerow input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contactusform textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+.contactussubmit {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactussubmit:hover {
+    background-color: #f85243;
+}
+
+@media (max-width: 768px) {
+    .samerow {
+        flex-direction: column;
+    }
+}
