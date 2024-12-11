@@ -1,4 +1,4 @@
-* ⁠{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: black;
+    background-color: rgb(35, 33, 33);
     color: white;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .tutorialdropdownitems li a:hover {
-    background-color: rgba(255, 111, 97, 0.2);
+    background-color: #ff6f6133;
     color: #ff6f61; 
 }
 
@@ -104,27 +104,24 @@ body {
     display: block;
 }
 
-/* Compiler Section */
 .compiler-container {
-    margin-top: 80px; /* Space for fixed navbar */
     width: 90%;
     max-width: 1200px;
-    margin: 80px auto;
+    margin: 110px auto;
 }
 
 iframe {
     width: 100%;
-    height: 80vh; /* Adjust height to fit the viewport */
+    height: 80vh; 
     border: none;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 10px #00000099;
 }
 
-/* Footer Styles */
 .footer {
     text-align: center;
     padding: 30px 20px;
-    background-color: #212121;
+    background-color: #151414;
     color: #b0b0b0;
     font-size: 14px;
 }
@@ -134,8 +131,6 @@ iframe {
     text-decoration: none;
     font-weight: bold;
 }
-
-/* Hover Effects */
 .footer a:hover {
     color: #ffffff;
 }
