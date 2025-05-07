@@ -9,8 +9,8 @@ body {
     background-color: #121212;
     color: #fff;
     display: flex;
-   
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .navbar {
     display: flex;
@@ -100,12 +100,17 @@ body {
 }
 
 
-.container {
+.logincontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex: 1;
     width: 100%;
+    padding: 100px 20px 40px;
+}
+
+.container {
+    display: none; /* Hide the old container */
 }
 
 .loginform {
@@ -117,6 +122,7 @@ body {
     box-shadow: 0 6px 20px #00000066;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    margin: 0 auto;
 }
 
 .loginform:hover {
