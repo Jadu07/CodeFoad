@@ -14,7 +14,8 @@
                         CODE<span style="color: #ff6f61;">FOAD</span>
                     </a>
                 </div>
-                <ul class="navigationlinks">
+                <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+                <ul class="navigationlinks" id="navLinks">
                     <li><a href="./index.html">Home</a></li>
                     <li class="tutdropdown">
                         <a>Tutorials</a>
@@ -24,9 +25,10 @@
                             <li><a href="./html.html">HTML</a></li>
                             <li><a href="./css.html">CSS</a></li>
                         </ul>
+                    </li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="./contactus.html">Contact</a></li>
-                    <li><a href="./login.html" class="loginbutton">Login</a></li>
+                    <li id="loginItem"><a href="./login.html" class="loginbutton">Login</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -183,4 +185,6 @@
 
         
 </body>
+<script src="common.js"></script>
+<script src="login.js"></script>
 </html>

@@ -374,24 +374,146 @@ ol {
     font-size: 30px;
 }
 
-@media (max-width: 768px) {
-    .navbar .navigationlinks {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+/* Mobile menu button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
 
-    .pythonhero h1 {
-        font-size: 2rem;
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .topiccontent {
+        padding: 15px;
     }
-
-    .pythonhero p {
-        font-size: 1rem;
-    }
-
-    .tryitbutton {
+    
+    .codebackground {
+        padding: 10px;
         font-size: 0.9rem;
-        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .mobile-menu-button {
+        display: block;
+    }
+    
+    .navigationlinks {
+        display: none;
+    }
+    
+    .navigationlinks.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(30, 30, 47, 0.95);
+        padding: 20px;
+        z-index: 1000;
+        gap: 15px;
+    }
+    
+    .tutorialdropdownitems {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Python hero */
+    .pythonhero h1, 
+    .python2heading h2 {
+        font-size: 40px;
+    }
+    
+    .pythonhero p,
+    .python2heading p {
+        font-size: 18px;
+    }
+    
+    /* Background sections */
+    .py1background,
+    .py2background,
+    .py3background,
+    .htmlbackground,
+    .cssbackground,
+    .bashbackground {
+        height: 400px;
+    }
+    
+    /* Topic sections */
+    .topicbackground1,
+    .topicbackground2,
+    .themebackground,
+    .revisionbackground,
+    .exercisesbackground {
+        width: 95%;
+    }
+    
+    .topiccontent h3 {
+        font-size: 1.5rem;
+    }
+    
+    .topiccontent span {
+        font-size: 24px;
+    }
+    
+    /* Code blocks */
+    .codebackground {
+        overflow-x: auto;
+    }
+    
+    /* Buttons */
+    section:nth-of-type(2) {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Python hero */
+    .pythonhero h1, 
+    .python2heading h2 {
+        font-size: 30px;
+    }
+    
+    .pythonhero p,
+    .python2heading p {
+        font-size: 16px;
+    }
+    
+    /* Background sections */
+    .py1background,
+    .py2background,
+    .py3background,
+    .htmlbackground,
+    .cssbackground,
+    .bashbackground {
+        height: 350px;
+    }
+    
+    /* Topic sections */
+    .topiccontent h3 {
+        font-size: 1.3rem;
+    }
+    
+    .theme h2 {
+        font-size: 1.5rem;
+    }
+    
+    .theme h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Code blocks */
+    .codebackground {
+        font-size: 0.8rem;
     }
 }
 

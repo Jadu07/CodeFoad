@@ -402,3 +402,132 @@ header {
     padding-bottom: 1px;
 
 }
+
+/* Mobile menu button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .featurescontainer {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .tutorialitem {
+        padding: 0 15px;
+    }
+    
+    .persons {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .mobile-menu-button {
+        display: block;
+    }
+    
+    .navigationlinks {
+        display: none;
+    }
+    
+    .navigationlinks.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        z-index: 1000;
+        gap: 15px;
+    }
+    
+    .tutorialdropdownitems {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Hero section */
+    .hero h1 {
+        font-size: 50px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    /* Features */
+    .featurescontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Tutorials */
+    .tutorialitem {
+        flex-direction: column;
+    }
+    
+    .tutorialreverse {
+        flex-direction: column;
+    }
+    
+    .tutorialimage {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .tutorialcontent {
+        max-width: 100%;
+    }
+    
+    /* About us */
+    .persons {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero section */
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .herobuttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Features */
+    .featurescontainer {
+        grid-template-columns: 1fr;
+    }
+    
+    .heading {
+        font-size: 30px;
+    }
+    
+    /* Tutorials */
+    .tutotialtitle {
+        font-size: 30px;
+    }
+    
+    .tutorialcontent h3 {
+        font-size: 1.5rem;
+    }
+}

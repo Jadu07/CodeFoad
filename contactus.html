@@ -13,7 +13,8 @@
                 CODE<span style="color: #ff6f61;">FOAD</span>
             </a>
         </div>
-        <ul class="navigationlinks">
+        <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+        <ul class="navigationlinks" id="navLinks">
             <li><a href="./index.html">Home</a></li>
             <li class="tutdropdown">
                 <a>Tutorials</a>
@@ -23,9 +24,10 @@
                     <li><a href="./html.html">HTML</a></li>
                     <li><a href="./css.html">CSS</a></li>
                 </ul>
+            </li>
             <li><a href="./index.html#aboutus">About Us</a></li>
             <li><a href="./contactus.html">Contact</a></li>
-            <li><a href="./login.html" class="loginbutton">Login</a></li>
+            <li id="loginItem"><a href="./login.html" class="loginbutton">Login</a></li>
         </ul>
     </nav>
 
@@ -51,7 +53,7 @@
 
             <div class="contactusform">
                 <h2>Send Us a Message</h2>
-                <form>
+                <form id="contactForm">
                     <div class="form-group">
                         <input type="text" name="name" id="name" placeholder="Your Name" required>
                     </div>
@@ -63,8 +65,38 @@
                     </div>
                     <button type="submit">Send Message</button>
                 </form>
+                <div id="successMessage" style="display: none; margin-top: 20px; text-align: center; color: #ff6f61; font-weight: bold;">
+                    Message sent successfully! We'll get back to you soon.
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="common.js"></script>
+    <script src="login.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real application, you would send the form data to a server here
+                    // For this demo, we'll just simulate a successful submission
+                    
+                    // Hide the form
+                    contactForm.style.display = 'none';
+                    
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    
+                    // Optional: Reset form fields
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
 </body>
 </html>

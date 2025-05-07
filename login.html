@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -14,7 +13,8 @@
                 CODE<span style="color: #ff6f61;">FOAD</span>
             </a>
         </div>
-        <ul class="navigationlinks">
+        <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+        <ul class="navigationlinks" id="navLinks">
             <li><a href="./index.html">Home</a></li>
             <li class="tutdropdown">
                 <a>Tutorials</a>
@@ -24,31 +24,36 @@
                     <li><a href="./html.html">HTML</a></li>
                     <li><a href="./css.html">CSS</a></li>
                 </ul>
-            <li><a href="#aboutus">About Us</a></li>
+            </li>
+            <li><a href="./index.html#aboutus">About Us</a></li>
             <li><a href="./contactus.html">Contact</a></li>
-            <li><a href="" class="loginbutton">Login</a></li>
+            <li id="loginItem"><a href="./login.html" class="loginbutton">Login</a></li>
         </ul>
     </nav>
-    <div class="container">
+    
+    <div class="logincontainer">
         <div class="loginform">
-            <h2>Login</h2>
-            <p class="subheading">Welcome back! Please enter your credentials to continue.</p>
-            <form>
+            <h2>Welcome Back!</h2>
+            <p class="subheading">Enter your credentials to access your account</p>
+            
+            <form id="loginForm">
                 <div class="inputs">
-                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
                 </div>
                 <div class="inputs">
-                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
                 <button type="submit" class="loginbutton1">Login</button>
                 <div class="forgotpassword">
                     <a href="#">Forgot Password?</a>
                 </div>
-                <div class="signup">
-                    <p>Don't have an account? <a href="#">Sign up</a></p>
-                </div>
             </form>
         </div>
     </div>
+    
+    <script src="login.js"></script>
+    <script src="common.js"></script>
 </body>
 </html>

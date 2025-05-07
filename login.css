@@ -208,3 +208,81 @@ h2 {
 .signup a:hover {
     text-decoration: underline;
 }
+
+/* Mobile menu button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    .mobile-menu-button {
+        display: block;
+    }
+    
+    .navigationlinks {
+        display: none;
+    }
+    
+    .navigationlinks.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        z-index: 1000;
+        gap: 15px;
+    }
+    
+    .tutorialdropdownitems {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Login form */
+    .loginform {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .subheading {
+        font-size: 0.9rem;
+    }
+    
+    .inputs input {
+        padding: 12px;
+    }
+    
+    .loginbutton1 {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginform {
+        padding: 25px 15px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .subheading {
+        font-size: 0.8rem;
+    }
+}

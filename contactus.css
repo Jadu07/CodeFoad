@@ -10,6 +10,7 @@ body {
     color: white;
 }
 
+/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,10 @@ body {
     height: 70px;
     width: 100%;
     position: fixed;
-    background: rgba(0, 0, 0, 0.598);
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
 }
 
 .logo a {
@@ -33,6 +37,8 @@ body {
     list-style: none;
     display: flex;
     gap: 35px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigationlinks a {
@@ -45,7 +51,7 @@ body {
     color: #ff6f61;
 }
 
-.loginbutton{
+.loginbutton {
     padding: 8px 15px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -59,21 +65,22 @@ body {
 
 .loginbutton:hover {
     background: #ffffff;
+    color: #000000;
 }
 
 .tutdropdown {
-    position: relative; 
+    position: relative;
 }
 
 .tutorialdropdownitems {
-    display: none; 
-    position: fixed;
-    background-color: #000000cc; 
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
     min-width: 180px;
-    box-shadow: 0 4px 8px #00000033; 
-    padding-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
 }
 
 .tutorialdropdownitems li {
@@ -81,20 +88,70 @@ body {
 }
 
 .tutorialdropdownitems li a {
-    color: #e0e0e0; 
+    color: #ffffff;
     padding: 10px 15px;
     display: block;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tutorialdropdownitems li a:hover {
     background-color: rgba(255, 111, 97, 0.2);
-    color: #ff6f61; 
+    color: #ff6f61;
 }
 
 .tutdropdown:hover .tutorialdropdownitems {
     display: block;
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;
+    }
+    
+    .navigationlinks {
+        display: none;
+    }
+    
+    .navigationlinks.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        z-index: 1000;
+        gap: 15px;
+    }
+    
+    .tutorialdropdownitems {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .tutdropdown:hover .tutorialdropdownitems {
+        display: none;
+    }
+    
+    .tutdropdown.active .tutorialdropdownitems {
+        display: block;
+    }
 }
 
 
@@ -107,11 +164,21 @@ body {
     justify-content: center;
 }
 
+/* Fix for contact form display */
+.contactus {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .contactuscontainer {
     display: flex;
     max-width: 1200px;
     width: 100%;
-    margin: 200px auto;
+    margin: 120px auto 60px;
     background-color: #1e1e1e;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -156,6 +223,7 @@ body {
 }
 
 .contactusform {
+    flex: 1;
     padding: 40px;
     background-color: #252525;
     display: flex;
@@ -209,4 +277,67 @@ button {
 button:hover {
     background-color: #e4554f;
     transform: scale(1.02);
+}
+
+/* Responsive styles for contact form */
+@media (max-width: 768px) {
+    .contactuscontainer {
+        flex-direction: column;
+        margin: 100px auto 40px;
+    }
+    
+    .contactusinformation,
+    .contactusform {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .contactusinformation h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .contactusform h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+    
+    button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactus {
+        padding: 0 10px;
+    }
+    
+    .contactuscontainer {
+        margin: 90px auto 30px;
+    }
+    
+    .contactusinformation,
+    .contactusform {
+        padding: 20px;
+    }
+    
+    .contactusinformation h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contactusform h2 {
+        font-size: 1.6rem;
+    }
+    
+    .Information h4 {
+        font-size: 0.9rem;
+    }
+    
+    .Information p {
+        font-size: 0.8rem;
+    }
 }
